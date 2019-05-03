@@ -46,3 +46,36 @@
   .movie:first-child .movie-overview { display: block; }
 }
 
+
+@media screen and (min-width: 1200px) {
+  
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .movie:first-child { 
+    grid-column: 1 /span 4;
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+  
+  .movie:first-child .movie-poster {
+    display: block;
+    object-fit: contain;
+  }
+
+  .movie:first-child .movie-backdrop {
+    height: 100%;
+  }
+
+  .movie:first-child .movie-image {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 60vh;
+    object-fit: fill;
+  }
+}
