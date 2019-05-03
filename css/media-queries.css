@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+  body { 
+    position: relative;
+    padding-left: 71px;
+   }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    display: grid;
+    grid-template-rows: min-content;
+  }
+
+  .site-logo,
+  .site-nav { position: static; }
+
+  .site-logo {
+    width: 1.65em;
+    height: unset;
+    padding: .4rem;
+    justify-self: center;
+  }
+
+  .site-nav-item {
+    float: unset;
+    width: unset;
+  }
+
+  .movie-overview { display: block }
+}
+
+
+
