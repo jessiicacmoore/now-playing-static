@@ -33,5 +33,16 @@
   .movie-overview { display: block }
 }
 
+@media screen and (min-width: 992px) {
+  .movie-overview {display: none}
 
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .movie:first-child { grid-column: 1 /span 3; }
+
+  .movie:first-child .movie-overview { display: block; }
+}
 
